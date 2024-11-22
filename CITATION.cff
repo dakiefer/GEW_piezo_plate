@@ -16,7 +16,7 @@ authors:
     email: clemens.gruensteidl@recendt.at
     affiliation: 'Research Center for Non Destructive Testing GmbH'
     orcid: 'https://orcid.org/0000-0001-5101-8479'
-#doi: TODO
+doi: 10.5281/zenodo.14205789
 #version: 1.0
 date-released: 2024-11-22
 url: 'https://github.com/dakiefer/GEW_piezo_plate'

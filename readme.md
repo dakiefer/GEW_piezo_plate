@@ -1,4 +1,4 @@
-# GEW piezo plate [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.TODO.svg)](https://doi.org/10.5281/zenodo.TODO)
+# GEW piezo plate [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14205789.svg)](https://doi.org/10.5281/zenodo.14205789)
 
 **Script to compute guided waves in piezoelectric plates.** 
 
@@ -37,7 +37,7 @@ If this code is useful to you, please cite the accompanying paper:
 
 as well as the software itself:
 
-> D. A. Kiefer and C. Grünsteidl (2024). GEW piezo plate. https://doi.org/10.5281/zenodo.TODO (https://github.com/dakiefer/GEW_piezo_plate)
+> D. A. Kiefer and C. Grünsteidl (2024). GEW piezo plate. https://doi.org/10.5281/zenodo.14205789 (https://github.com/dakiefer/GEW_piezo_plate)
 
 ## Dependencies
 
