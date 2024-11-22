@@ -2,7 +2,7 @@
 
 **Script to compute guided waves in piezoelectric plates.** 
 
-Code repository: [<img src="https://www.svgrepo.com/show/35001/github.svg" alt="GitHub" width="27px" />](https://github.com/dakiefer/gew_dispersion_script) [https://github.com/dakiefer/gew_piezo_plate](https://github.com/dakiefer/gew_piezo_plate)
+[<img src="https://www.svgrepo.com/show/35001/github.svg" alt="GitHub" width="27px" />](https://github.com/dakiefer/gew_dispersion_script) [https://github.com/dakiefer/gew_piezo_plate](https://github.com/dakiefer/gew_piezo_plate)
 
 `GEW piezo plate` is a minimal script for fast and robust computation of guided electroelastic waves in piezoelectric plates. It implements the spectral collocation method (SCM) based on DMSUITE and is an extension to [GEW dispersion script](https://github.com/dakiefer/GEW_dispersion_script). The code implements the method from 
 
