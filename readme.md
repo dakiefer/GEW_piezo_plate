@@ -10,7 +10,7 @@
 
 Features:
 
-- only ~130 comprehensive lines of Matlab code
+- only ~100 comprehensive lines of Matlab code
 - electrically "shorted" or "open" plate surfaces 
 - arbitrary propagation direction
 

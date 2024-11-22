@@ -131,20 +131,10 @@ end
 w = whn*fh0/h; % convert to rad/s
 chron = toc; fprintf('nK: %d, nF: %d, elapsed time: %g, time per point: %g. ms\n', size(w, 1), size(w, 2), chron, chron/length(w(:))*1e3);
 
-
-%% reference 
-matGEW = MaterialPiezoelectric('lithium_niobate'); 
-matGEW = matGEW.rotateEuler(-theta, 'z', 38/180*pi, 'x'); 
-plate = Plate(matGEW,h,N); 
-gew = plate.fullyCoupled; 
-gew.fixGdof(nfix);
-dat = computeW(gew,k,25); 
-
 %% plot 
 figure; hold on;
 kk = k.*ones(size(w)); % expand to same size as w
 plot(kk/1e3, w/2/pi/1e6, 'k-');
-plot(dat.k/1e3, dat.w/2/pi/1e6, 'r.');
 xlim([0, 25]), ylim([0, 30])
 xlabel('wavenumber k in rad/mm'), ylabel('frequency f in MHz'),
 
