@@ -1,0 +1,30 @@
+{
+    "title": "GEW piezo plate",
+    "description": "<p><code>GEW piezo plate</code> is a minimal script for fast and robust computation of <strong>guided electroelastic waves</strong> in piezoelectric plates. It implements the spectral collocation method (SCM) based on <a href=https://www.mathworks.com/matlabcentral/fileexchange/29-dmsuite>DMSUITE</a> and is an extension to <a href=https://github.com/dakiefer/GEW_dispersion_script>GEW dispersion script</a>. The code implements the method from </p><p>D. A. Kiefer, G. Watzl, K. Burgholzer, M. Ryzy, and C. Gr&uuml;nsteidl, 'Electroelastic guided wave dispersion in piezoelectric plates: spectral methods and laser-ultrasound experiments,' Submitted. Nov. 2024.</p><p>Features:<ul><li>only ~130 comprehensive lines of Matlab code</li><li>electrically 'shorted' or 'open' plate surfaces</li><li>arbitrary propagation direction</li></ul></p>",
+    "creators": [
+        {
+            "name": "Kiefer, Daniel A.",
+            "affiliation": "Institut Langevin, ESPCI Paris, Université PSL",
+            "orcid": "0000-0003-0776-8429"
+        },
+        {
+            "name": "Grünsteidl, Clemens",
+            "affiliation": "Research Center for Non Destructive Testing GmbH",
+            "orcid": "0000-0001-5101-8479"
+        }
+    ],
+    "upload_type": "software",
+    "license": "isc",
+    "related_identifiers": [
+        {
+            "relation": "isSupplementTo",
+            "scheme": "url",
+            "resource_type": "software",
+            "identifier": "https://github.com/dakiefer/GEW_piezo_plate"
+        }
+    ],
+    "references": [ 
+        "D. A. Kiefer, G. Watzl, K. Burgholzer, M. Ryzy, and C. Grünsteidl, \"Electroelastic guided wave dispersion in piezoelectric plates: spectral methods and laser-ultrasound experiments,\" Nov. 2024. (submitted)."
+    ],
+    "keywords": ["guided waves", "dispersion", "piezoelectricity", "SAW", "MEMS", "Lamb waves", "elastodynamics", "ultrasound"]
+}
