@@ -38,8 +38,8 @@
 mat = jsondecode(fileread('lithium_niobate_128Ycut.json')); % load material data
 h = 0.51e-3;     % thickness in m
 N = 20;          % discretization: polynomial order of interpolants
-BCtop = 'open';  % "open" | "shorted". Electrical boundary condition at top surface
-BCbot = 'open';  % "open" | "shorted". Electrical boundary condition at bottom surface
+BCtop = 'open';  % 'open' | 'shorted'. Electrical boundary condition at top surface
+BCbot = 'open';  % 'open' | 'shorted'. Electrical boundary condition at bottom surface
 theta = pi/2;    % propagation direction in the plane of the plate (from X)
 k = linspace(1e-2, 15, 120).'/h; % wavenumbers on which to solve
 
@@ -109,8 +109,8 @@ L2(dofBC,:) = 0; L1(dofBC,:) = B1; L0(dofBC,:) = B0; M(dofBC,:) = 0;
 
 % metalized surfaces (Dirichlet BCs for the electric potential):
 nfix = []; % list of degrees of freedom (DOF) where to apply shorted conditions
-if string(BCtop) == "shorted", nfix = [nfix, dofPhiTop]; end % add Phi-DOF at top to list
-if string(BCbot) == "shorted", nfix = [nfix, dofPhiBot]; end % add Phi-DOF at bottom to list
+if strcmp(BCtop, 'shorted'), nfix = [nfix, dofPhiTop]; end % add Phi-DOF at top to list
+if strcmp(BCbot, 'shorted'), nfix = [nfix, dofPhiBot]; end % add Phi-DOF at bottom to list
 L2(nfix,:) = []; L1(nfix,:) = []; L0(nfix,:) = []; M(nfix,:) = []; 
 L2(:,nfix) = []; L1(:,nfix) = []; L0(:,nfix) = []; M(:,nfix) = [];
 
