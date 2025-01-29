@@ -46,7 +46,7 @@ k = linspace(1e-2, 15, 120).'/h; % wavenumbers on which to solve
 % convert material parameters from Voigt notated matrices to tensors
 c = voigt2tensor4(mat.C); % stiffness in Pa = V/m*A*s/m^2, size [3x3x3x3]
 rho = mat.rho;            % mass density in kg/m^3 = A*s^3*V/m^5
-e = voigt2tensor3(mat.e); % charge constants in A*s/m^2, size [3x3x3]
+e = voigt2tensor3(mat.E); % charge constants in A*s/m^2, size [3x3x3]
 eps0 = 8.8541878188e-12;  % permittivity of free space in A*s/(V*m)
 E = mat.epsr*eps0;        % permittivity in A*s/(V*m), size [3x3]
 
