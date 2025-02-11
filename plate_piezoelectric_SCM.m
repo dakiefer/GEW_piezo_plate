@@ -51,9 +51,9 @@ eps0 = 8.8541878188e-12;  % permittivity of free space in A*s/(V*m)
 E = mat.epsr*eps0;        % permittivity in A*s/(V*m), size [3x3]
 
 % rotate to propagation direction:
-c = rotate(c,-theta);
-e = rotate(e,-theta);
-E = rotate(E,-theta);
+c = rotate(c,theta);
+e = rotate(e,theta);
+E = rotate(E,theta);
 
 % normalize parameters:
 c0 = c(1,2,1,2); rho0 = rho; E0 = E(1,1); e0 = sqrt(E0*c0); fh0 = sqrt(c0/rho0); % choose
@@ -132,14 +132,37 @@ w = whn*fh0/h; % convert to rad/s
 chron = toc; fprintf('nK: %d, nF: %d, elapsed time: %g, time per point: %g. ms\n', size(w, 1), size(w, 2), chron, chron/length(w(:))*1e3);
 
 %% plot 
-figure; hold on;
+figure(1); clf; hold on;
 kk = k.*ones(size(w)); % expand to same size as w
 plot(kk/1e3, w/2/pi/1e6, 'k-');
 xlim([0, 25]), ylim([0, 30])
 xlabel('wavenumber k in rad/mm'), ylabel('frequency f in MHz'),
 
 
+%% solve for complex wavenumbers: 
+wh = 2*pi*linspace(1e-2, 12, 400)*1e6*h;  % angular-frequency*thickness
+kh = nan(size(M,2)*2, length(wh));        % allocate array for normalized wavenumbers
+Psi = zeros([size(M,1), size(M,1)*2, length(wh)]);     % allocate for eigenvectors
+tic
+for ii = 1:length(wh)
+    whn = wh(ii)/fh0; % current frequency-thickness (normalized)
+    [Psii, khi] = polyeig(L0 + whn^2*M, L1, L2); % solve [-kh^2*L2 + i*kh*L1 + L0 + whn^2*M]*Psi = 0
+    kh(:,ii) = -1i*khi;
+    Psi(:,:,ii) = Psii; 
+end
+kc = sort(kh/h,1); kc = kc(2:round(1.6*N),:); % only smallest magnitude are good approximations
+chron = toc; fprintf('nF: %d, nK: %d, elapsed time: %g, time per point: %g ms\n', size(kc, 1), size(kc, 2), chron, chron/length(kc(:))*1e3);
 
+%% plot complex:
+figure(2); clf; hold on; 
+ww = wh/h.*ones(size(kc)); % expand to same size as kh
+isreal = abs(imag(kc*h)) < 1e-5; 
+plot3(real(kc(:))/1e3, imag(kc(:))/1e3, ww(:)/2/pi/1e6, '.', 'Color', '#5EC962', 'MarkerSize', 8); hold on; 
+plot3(real(kc(isreal))/1e3, imag(kc(isreal))/1e3, ww(isreal)/2/pi/1e6, '.', 'Color', '#3B518B', 'MarkerSize', 8);
+xlim([-1e-3, 1]*15), ylim([-1e-3, 1]*15), zlim([0, ww(end)/2/pi/1e6])
+xlabel('Re k in rad/mm'), ylabel('Im k in rad/mm'), zlabel('f in MHz')
+set(gca,'YDir','reverse')
+view(14,21);
 
 
 
