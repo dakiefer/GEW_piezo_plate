@@ -137,7 +137,7 @@ kk = k.*ones(size(w)); % expand to same size as w
 plot(kk/1e3, w/2/pi/1e6, 'k-');
 xlim([0, 25]), ylim([0, 30])
 xlabel('wavenumber k in rad/mm'), ylabel('frequency f in MHz'),
-
+drawnow;
 
 %% solve for complex wavenumbers: 
 wh = 2*pi*linspace(1e-2, 12, 400)*1e6*h;  % angular-frequency*thickness
@@ -163,6 +163,7 @@ xlim([-1e-3, 1]*15), ylim([-1e-3, 1]*15), zlim([0, ww(end)/2/pi/1e6])
 xlabel('Re k in rad/mm'), ylabel('Im k in rad/mm'), zlabel('f in MHz')
 set(gca,'YDir','reverse')
 view(14,21);
+drawnow;
 
 
 

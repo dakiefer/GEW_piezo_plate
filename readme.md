@@ -23,7 +23,7 @@ Computational results are depicted below in the form of dispersion curves. The w
 ![Dispersion in a piezoelectric plate.](assets/dispersion_piezoelectric.jpg)
 
 > [!TIP]
-> This is a simple script that should be easy to extend with custom functionality. If you are rather looking for a full system to compute and postprocess guided waves, have a look at [GEWtool](https://github.com/dakiefer/GEWtool). It will soon support multilayered piezoelectric plates.
+> This is a simple script that should be easy to extend with custom functionality. If you are rather looking for a full system to compute and postprocess guided waves, have a look at [GEWtool](https://github.com/dakiefer/GEWtool).
 
 ## How to use
 
@@ -41,7 +41,7 @@ as well as the software itself:
 
 ## Dependencies
 
-The authors are grateful for permission to bundle `chebdif.m` from DMSUITE:
+This software bundles `chebdif.m` from DMSUITE:
 
 J.A.C Weideman (2022). DMSUITE (https://www.mathworks.com/matlabcentral/fileexchange/29-dmsuite), MATLAB Central File Exchange. Retrieved August 18, 2022.
 
