@@ -1,6 +1,6 @@
 {
     "title": "GEW piezo plate",
-    "description": "<p><code>GEW piezo plate</code> is a minimal script for fast and robust computation of <strong>guided electroelastic waves</strong> in piezoelectric plates. It implements the spectral collocation method (SCM) based on <a href=https://www.mathworks.com/matlabcentral/fileexchange/29-dmsuite>DMSUITE</a> and is an extension to <a href=https://github.com/dakiefer/GEW_dispersion_script>GEW dispersion script</a>. The code implements the method from </p><p>D. A. Kiefer, G. Watzl, K. Burgholzer, M. Ryzy, and C. Gr&uuml;nsteidl, 'Electroelastic guided wave dispersion in piezoelectric plates: spectral methods and laser-ultrasound experiments,' Submitted. Nov. 2024.</p><p>Features:<ul><li>only ~130 comprehensive lines of Matlab code</li><li>electrically 'shorted' or 'open' plate surfaces</li><li>arbitrary propagation direction</li></ul></p>",
+    "description": "<p><code>GEW piezo plate</code> is a minimal script for fast and robust computation of <strong>guided electroelastic waves</strong> in piezoelectric plates. It implements the spectral collocation method (SCM) based on <a href=https://www.mathworks.com/matlabcentral/fileexchange/29-dmsuite>DMSUITE</a> and is an extension to <a href=https://github.com/dakiefer/GEW_dispersion_script>GEW dispersion script</a>. The code implements the method from </p><p>D. A. Kiefer, G. Watzl, K. Burgholzer, M. Ryzy, and C. Grünsteidl, ''Electroelastic guided wave dispersion in piezoelectric plates: Spectral methods and laser-ultrasound experiments,'' Journal of Applied Physics, vol. 137, no. 11, p. 114502, Mar. 2025, doi: <a href=https://doi.org/10.1063/5.0250494>10.1063/5.0250494</a>.</p><p>Features:<ul><li>only ~130 comprehensive lines of Matlab code</li><li>electrically 'shorted' or 'open' plate surfaces</li><li>arbitrary propagation direction</li></ul></p>",
     "creators": [
         {
             "name": "Kiefer, Daniel A.",
@@ -24,7 +24,7 @@
         }
     ],
     "references": [ 
-        "D. A. Kiefer, G. Watzl, K. Burgholzer, M. Ryzy, and C. Grünsteidl, \"Electroelastic guided wave dispersion in piezoelectric plates: spectral methods and laser-ultrasound experiments,\" Nov. 2024. (submitted)."
+        "D. A. Kiefer, G. Watzl, K. Burgholzer, M. Ryzy, and C. Grünsteidl, \"Electroelastic guided wave dispersion in piezoelectric plates: Spectral methods and laser-ultrasound experiments,\" Journal of Applied Physics, vol. 137, no. 11, p. 114502, Mar. 2025, doi: 10.1063/5.0250494."
     ],
-    "keywords": ["guided waves", "dispersion", "piezoelectricity", "SAW", "MEMS", "Lamb waves", "elastodynamics", "ultrasound"]
+    "keywords": ["guided waves", "dispersion", "piezoelectricity", "SAW", "MEMS", "Lamb waves", "elastodynamics", "ultrasound", "semi-analytical method", "spectral method"]
 }

@@ -6,7 +6,7 @@
 
 `GEW piezo plate` is a minimal script for fast and robust computation of guided electroelastic waves in piezoelectric plates. It implements the spectral collocation method (SCM) based on DMSUITE and is an extension to [GEW dispersion script](https://github.com/dakiefer/GEW_dispersion_script). The code implements the method from 
 
-> D. A. Kiefer, G. Watzl, K. Burgholzer, M. Ryzy, and C. Grünsteidl, “Electroelastic guided wave dispersion in piezoelectric plates: spectral methods and laser-ultrasound experiments,” Submitted. Nov. 2024.
+> D. A. Kiefer, G. Watzl, K. Burgholzer, M. Ryzy, and C. Grünsteidl, “Electroelastic guided wave dispersion in piezoelectric plates: Spectral methods and laser-ultrasound experiments,” Journal of Applied Physics, vol. 137, no. 11, p. 114502, Mar. 2025, [10.1063/5.0250494](https://doi.org/10.1063/5.0250494).
 
 Features:
 
@@ -33,7 +33,7 @@ Computational results are depicted below in the form of dispersion curves. The w
 ## How to cite 
 If this code is useful to you, please cite the accompanying paper:
 
-> D. A. Kiefer, G. Watzl, K. Burgholzer, M. Ryzy, and C. Grünsteidl, “Electroelastic guided wave dispersion in piezoelectric plates: spectral methods and laser-ultrasound experiments,” Submitted. Nov. 2024.
+> D. A. Kiefer, G. Watzl, K. Burgholzer, M. Ryzy, and C. Grünsteidl, “Electroelastic guided wave dispersion in piezoelectric plates: Spectral methods and laser-ultrasound experiments,” Journal of Applied Physics, vol. 137, no. 11, p. 114502, Mar. 2025, [10.1063/5.0250494](https://doi.org/10.1063/5.0250494).
 
 as well as the software itself:
 
@@ -46,7 +46,7 @@ This software bundles `chebdif.m` from DMSUITE:
 J.A.C Weideman (2022). DMSUITE (https://www.mathworks.com/matlabcentral/fileexchange/29-dmsuite), MATLAB Central File Exchange. Retrieved August 18, 2022.
 
 ## Literature 
-> [1] D. A. Kiefer, G. Watzl, K. Burgholzer, M. Ryzy, and C. Grünsteidl, “Electroelastic guided wave dispersion in piezoelectric plates: spectral methods and laser-ultrasound experiments,” Submitted. Nov. 2024.  
+> [1] D. A. Kiefer, G. Watzl, K. Burgholzer, M. Ryzy, and C. Grünsteidl, “Electroelastic guided wave dispersion in piezoelectric plates: Spectral methods and laser-ultrasound experiments,” Journal of Applied Physics, vol. 137, no. 11, p. 114502, Mar. 2025, [10.1063/5.0250494](https://doi.org/10.1063/5.0250494). [![PDF](assets/icon_file-pdf.svg)](https://dakiefer.net/publication/2025_Kiefer_piezowaves/2025_Kiefer_piezowaves.pdf)  
 > [2] L. N. Trefethen, _Spectral Methods in MATLAB_. Philadelphia, PA: Society for Industrial and Applied Mathematics, 2000. doi: [10.1137/1.9780898719598](https://doi.org/10.1137/1.9780898719598).  
 > [3] J. A. Weideman and S. C. Reddy, “A MATLAB Differentiation Matrix Suite,” ACM Trans. Math. Softw., vol. 26, no. 4, pp. 465–519, Dec. 2000, doi: [10.1145/365723.365727](https://doi.org/10.1145/365723.365727).  
 > [4] A. T. I. Adamou and R. V. Craster, “Spectral methods for modelling guided waves in elastic media,” The Journal of the Acoustical Society of America, vol. 116, no. 3, pp. 1524–1535, Sep. 2004, doi: [10.1121/1.1777871](https://doi.org/10.1121/1.1777871).  
@@ -61,7 +61,7 @@ Code created 2024 by:
 
 **Daniel A. Kiefer**, Institut Langevin, ESPCI Paris, Université PSL, France  
 Contact: [daniel.kiefer@espci.fr](mailto:daniel.kiefer@espci.fr) &nbsp; • &nbsp; [dakiefer.net](https://dakiefer.net) &nbsp; • &nbsp; Follow me on [ResearchGate](https://www.researchgate.net/profile/Daniel-Kiefer-5)!  
-[![Logo Institut Langevin](assets/logo_institut_langevin.svg)](https://www.institut-langevin.espci.fr)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Logo ESPCI](assets/logo_espci.svg)](https://www.espci.psl.eu/en/)
+[![Logo Institut Langevin](assets/logo_institut_langevin.svg)](https://www.institut-langevin.espci.fr)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Logo ESPCI](assets/logo_espci.svg)](https://www.espci.psl.eu/en/)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Logo CNRS](assets/logo_cnrs.svg)](https://www.cnrs.fr/en)
 
 **Clemens Grünsteidl**, Research Center for Non Destructive Testing GmbH, Austria  
 Contact: [clemens.gruensteidl@recendt.at](mailto:clemens.gruensteidl@recendt.at) &nbsp; • &nbsp; Follow me on [ResearchGate](https://www.researchgate.net/profile/Clemens-Grunsteidl)!  
